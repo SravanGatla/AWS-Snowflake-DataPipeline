@@ -1,5 +1,9 @@
 # AWS-Snowflake-DataPipeline
 
+## Disclaimer
+
+This project is a subset of my work at Mckesson. Please note that the provided bucket name, file paths, and other credentials are placeholders and not real. Replace them with your actual credentials when setting up the project.
+
 ## Data Processing Infrastructure on AWS
 
 This repository contains the infrastructure code to set up a data processing environment on AWS. The infrastructure includes an EC2 instance for data processing, an S3 bucket for data storage, and CloudWatch Logs for monitoring.
