@@ -7,17 +7,17 @@ from your_module import process_and_analyse_data, mask_sensitive_data, load_data
 from your_module import process_data_in_parallel, mask_data_in_parallel, load_data_in_parallel
 
 def main():
-  s3_bucket_name = 'name of the S3 bucket'
-  S3_file_key = 'path/your_file_key.csv'
+  s3_bucket_name = 'XXXXXXX-data-bucket'
+  S3_file_key = 'data/2024/customer_data.csv'
   snowflake_connection_params = {
-      'user': 'your-username',
-      'password': 'your-password',
-      'account': 'your-account',
-      'warehouse': 'your-warehouse',
-      'database': 'your-database',
-      'schema': 'your-schema'
+      'user': 'SravankumarGatla_XXXXX',
+      'password': 'XXXXXX',
+      'account': 'xy12345.us-east-1',
+      'warehouse': 'warehouseXXXX',
+      'database': 'databaseXXXX',
+      'schema': 'private'
   }
-  table_name = 'your-table-name'
+  table_name = 'table-name-XXXX'
 
   extractor = CSVDataExtractor(s3_bucket_name, S3_file_key)
   data_chunks = extractor.extract_data()
