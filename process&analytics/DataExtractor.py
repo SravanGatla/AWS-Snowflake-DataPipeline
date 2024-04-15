@@ -15,5 +15,5 @@ class DataExtractor:
 
   def create_external_stage(self, conn, stage_name):
     cursor = conn.cursor()
-    create_stage_query = f"create or replace stage {stage_name}"
+    create_stage_query = f"create or replace stage data_XXXXXX_stage" 
     cursor.execute(create_stage_query)
