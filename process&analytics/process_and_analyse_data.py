@@ -4,6 +4,7 @@ class DataProcessor:
   def __init__(self, data):
     self.data = data
 
+ # There are various other columns which are processed depending on the columns and nature of data. But, in this method I took some basic columns   
   def process_and_analyse_data(self):
     self.data['age'] = self.data['age'].astype(int)
     self.data['date'] = pd.to_datetime(self.data['date'])
