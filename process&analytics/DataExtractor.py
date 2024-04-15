@@ -7,7 +7,7 @@ from snowflake.connector.pandas_tools import write_pandas
 class DataExtractor:
   def __init__(self, bucket_name, file_key, chunk_size = 10000):
     self.bucket_name = bucket_name
-    self.file_key = file_key # Path of the file/ file which we want to extract.
+    self.file_key = file_key
     self.chunk_size = chunk_size
 
   def extract_data(self):
